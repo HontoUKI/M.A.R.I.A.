@@ -105,3 +105,10 @@ This repository exists as:
 - historical archive of project evolution;
 - public entry point into the M.A.R.I.A. ecosystem.
 
+## Screenshots
+
+> Debug WebUI — developer/debug cockpit
+
+![Maria Debug WebUI — live conversation](public/screens/maria-live-conversation.png)
+
+![Maria Debug WebUI — empty state](public/screens/maria-empty-backend-off.png)

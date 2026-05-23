@@ -215,10 +215,5 @@ engine — добро пожаловать.
 ## Связанные документы
 
 - [`docs/MARIA_DEVLOG.md`](MARIA_DEVLOG.md) — авторская хроника.
-- [`DEV_LOG.md`](../DEV_LOG.md) — технический stage-by-stage журнал.
-- [`Project_state.md`](../Project_state.md) — текущий снимок
-  архитектуры.
-- [`core/CORE_SPEC.md`](../core/CORE_SPEC.md) и
-  пакетные SPEC'ы — формальные контракты слоёв.
 - [`docs/public_private_boundary.md`](public_private_boundary.md) —
   публичный/приватный контракт.

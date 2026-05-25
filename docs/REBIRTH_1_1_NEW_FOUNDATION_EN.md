@@ -76,10 +76,16 @@ External embodiment modules become separate ecosystem projects that
 talk to Core through HTTP / events:
 
 - `M.A.R.I.A.-Voice` (TTS / STT / VAD / playback);
-- `M.A.R.I.A.-Avatar` (Live2D / sprite renderer / animation);
 - `M.A.R.I.A.-CV` (camera / screen observers feeding presence
   snapshots);
-- `M.A.R.I.A.-Unity` (full embodiment client).
+- `M.A.R.I.A.-Presence-Shell` — the embodiment client. A
+  **Tauri-based desktop shell** (Rust native + web layer) that
+  handles avatar rendering through Live2D / sprite inside its
+  webview, plus window / state / audio bridging. Replaces the
+  earlier separate `M.A.R.I.A.-Avatar` (rendering) and
+  `M.A.R.I.A.-Unity` (full embodiment) plans with a single
+  lighter client — no game-engine overhead for what is, at heart,
+  character rendering plus window management.
 
 These remain author-driven and intentionally decoupled — not
 abandoned. They are out of Core because they should be out of Core.

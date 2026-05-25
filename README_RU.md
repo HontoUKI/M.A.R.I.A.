@@ -38,7 +38,7 @@ M.A.R.I.A.
 | [`M.A.R.I.A.-Core`](https://github.com/HontoUKI/M.A.R.I.A.-Core)   | Каноническое single-user ядро и архитектурное сердце экосистемы         |
 | [`M.A.R.I.A.-WebUI`](https://github.com/HontoUKI/M.A.R.I.A.-WebUI) | Debug/developer cockpit для наблюдения и тестирования поведения runtime |
 
-В будущем экосистема может включать Voice, CV, Avatar/Live2D, Discord-интеграцию и другие клиентские модули.
+В будущем экосистема может включать Voice, CV, **Presence-Shell** (десктопный shell на Tauri, отвечающий за рендер аватара и window/audio мост), Discord-интеграцию и другие клиентские модули.
 
 Репозитории, использующие название `M.A.R.I.A.`, но не перечисленные здесь, не считаются официальной частью экосистемы.
 
@@ -89,9 +89,11 @@ M.A.R.I.A. не создаётся как очередной generic “AI compa
 M.A.R.I.A.
 ├─ M.A.R.I.A.-Core
 ├─ M.A.R.I.A.-WebUI
-├─ M.A.R.I.A.-Voice        (future)
-├─ M.A.R.I.A.-CV           (future)
-├─ M.A.R.I.A.-Avatar       (future)
+├─ M.A.R.I.A.-Voice              (future, TTS/STT/VAD/playback)
+├─ M.A.R.I.A.-CV                 (future, presence observer)
+├─ M.A.R.I.A.-Presence-Shell     (future, Tauri desktop shell —
+│                                 рендер аватара + window/audio мост;
+│                                 заменяет ранние Unity/Live2D планы)
 └─ Другие модули экосистемы
 ```
 

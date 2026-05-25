@@ -76,10 +76,16 @@ Flask-совместимость, слишком много несвязанны
 с Core через HTTP / events:
 
 - `M.A.R.I.A.-Voice` (TTS / STT / VAD / playback);
-- `M.A.R.I.A.-Avatar` (Live2D / sprite renderer / анимация);
 - `M.A.R.I.A.-CV` (камеры / screen observers, отдающие presence
   snapshots);
-- `M.A.R.I.A.-Unity` (полноценный embodiment client).
+- `M.A.R.I.A.-Presence-Shell` — embodiment-клиент.
+  **Десктопный shell на Tauri** (Rust native + web-слой) — рендер
+  аватара через Live2D / sprite внутри webview'а плюс window /
+  state / audio мост. Заменяет более ранние раздельные планы
+  `M.A.R.I.A.-Avatar` (рендер) и `M.A.R.I.A.-Unity` (полноценный
+  embodiment) на один более лёгкий клиент — без game-engine
+  overhead'а там, где задача — character rendering плюс window
+  management.
 
 Они остаются author-driven и сознательно decoupled — не заброшены.
 Они вне Core, потому что им так и положено быть.

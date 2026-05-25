@@ -96,7 +96,10 @@
 | [`M.A.R.I.A.-WebUI`](https://github.com/HontoUKI/M.A.R.I.A.-WebUI) | Debug/developer cockpit. | Public; ожидает миграции на новый FastAPI контракт. |
 
 Будущие модули экосистемы (планируются как отдельные клиенты): Voice,
-CV, Avatar/Live2D, sprite, Discord — все вне Core, через
+CV, **Presence-Shell** (десктопный shell на Tauri — рендер аватара
+через Live2D / sprite в web-слое плюс window / audio мост; заменяет
+ранние раздельные планы Avatar + Unity), Discord — все вне Core,
+через
 [`contracts/`](https://github.com/HontoUKI/M.A.R.I.A.-Core/tree/main/contracts)
 typed envelope'ы.
 

@@ -111,12 +111,23 @@ union).
 
 ```
 contracts/
-├── voice.py     # SpeechPlan, VoiceEvent — for the future M.A.R.I.A.-Voice
-├── avatar.py    # AvatarExpression — for Live2D / sprite clients
-├── presence.py  # PresenceSnapshot — for CV observers
+├── voice.py     # SpeechPlan, VoiceEvent — for M.A.R.I.A.-Voice
+├── avatar.py    # AvatarExpression — for M.A.R.I.A.-Presence-Shell
+│                # (Tauri desktop shell rendering Live2D / sprite inside
+│                # its web layer; replaces earlier Avatar + Unity plans)
+├── presence.py  # PresenceSnapshot — for M.A.R.I.A.-CV observers
 ├── scene.py     # SceneSnapshot — multi-person scenes
 └── events.py    # CoreEvent discriminated union
 ```
+
+> The embodiment side of the ecosystem consolidated into a single
+> client: **`M.A.R.I.A.-Presence-Shell`** is a Tauri-based desktop
+> shell (Rust native backend + web frontend) that handles avatar
+> rendering through Live2D / sprite *inside its webview*, plus
+> window / state / audio bridging. This replaces the earlier
+> separate `M.A.R.I.A.-Avatar` and `M.A.R.I.A.-Unity` plans —
+> the underlying point ("Core does not own embodiment") is the
+> same, only the embodiment client is lighter and easier to ship.
 
 ### Runtime example
 

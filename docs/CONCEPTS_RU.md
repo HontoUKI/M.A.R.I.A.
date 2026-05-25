@@ -107,12 +107,22 @@ SceneSnapshot, CoreEvent discriminated union).
 
 ```
 contracts/
-├── voice.py     # SpeechPlan, VoiceEvent — для будущего M.A.R.I.A.-Voice
-├── avatar.py    # AvatarExpression — для Live2D / sprite client'ов
-├── presence.py  # PresenceSnapshot — для CV observer'ов
+├── voice.py     # SpeechPlan, VoiceEvent — для M.A.R.I.A.-Voice
+├── avatar.py    # AvatarExpression — для M.A.R.I.A.-Presence-Shell
+│                # (десктопный shell на Tauri, рендер Live2D / sprite
+│                # внутри web-слоя; заменяет ранние Avatar + Unity планы)
+├── presence.py  # PresenceSnapshot — для M.A.R.I.A.-CV observer'ов
 ├── scene.py     # SceneSnapshot — multi-person сцены
 └── events.py    # CoreEvent discriminated union
 ```
+
+> Embodiment-сторона экосистемы сконсолидировалась в один клиент:
+> **`M.A.R.I.A.-Presence-Shell`** — десктопный shell на Tauri (Rust
+> native backend + web-фронтенд), который рендерит аватар через
+> Live2D / sprite *внутри webview'а* и обеспечивает window / state /
+> audio мост. Это замена раздельным ранним планам `M.A.R.I.A.-Avatar`
+> и `M.A.R.I.A.-Unity` — главный тезис ("Core не владеет embodiment")
+> остаётся, но embodiment-клиент стал легче и проще в дистрибуции.
 
 ### Пример из runtime'а
 

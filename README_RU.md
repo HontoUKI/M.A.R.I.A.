@@ -49,11 +49,17 @@ M.A.R.I.A.
 Этот репозиторий не является runtime-репозиторием.
 Он служит философской, экосистемной и документационной точкой входа в M.A.R.I.A.
 
-Рекомендуемый порядок чтения:
+**С чего начать:** [`docs/INDEX_RU.md`](docs/INDEX_RU.md) — навигационный hub с reading paths, картой документов, FAQ и концептами.
+
+Рекомендуемые маршруты:
 
 1. `README_RU.md`
-2. `docs/PROJECT_PHILOSOPHY_RU.md`
-3. `docs/MARIA_DEVLOG_RU.md`
+2. [`docs/INDEX_RU.md`](docs/INDEX_RU.md) — навигационный hub
+3. [`docs/FAQ_RU.md`](docs/FAQ_RU.md) — частые вопросы
+4. [`docs/PROJECT_PHILOSOPHY_RU.md`](docs/PROJECT_PHILOSOPHY_RU.md) — полная философия
+5. [`docs/CONCEPTS_RU.md`](docs/CONCEPTS_RU.md) — 5 концептов: философия → архитектура → пример
+6. [`docs/REBIRTH_1_1_NEW_FOUNDATION_RU.md`](docs/REBIRTH_1_1_NEW_FOUNDATION_RU.md) — narrative текущей линии
+7. [`docs/MARIA_DEVLOG_RU.md`](docs/MARIA_DEVLOG_RU.md) — авторский дневник
 
 ---
 

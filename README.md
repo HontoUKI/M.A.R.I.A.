@@ -48,11 +48,17 @@ Repositories using the `M.A.R.I.A.` naming but not listed here are not considere
 This repository is not a runtime repository.  
 It is the philosophical, ecosystem and documentation entry point of M.A.R.I.A.
 
-Recommended reading order:
+**Start here:** [`docs/INDEX_EN.md`](docs/INDEX_EN.md) — the navigation hub with reading paths, document map, FAQ and concept arcs.
+
+Recommended reading paths:
 
 1. `README.md`
-2. `docs/PROJECT_PHILOSOPHY_EN.md`
-3. `docs/MARIA_DEVLOG_EN.md`
+2. [`docs/INDEX_EN.md`](docs/INDEX_EN.md) — navigation hub
+3. [`docs/FAQ_EN.md`](docs/FAQ_EN.md) — frequently asked questions
+4. [`docs/PROJECT_PHILOSOPHY_EN.md`](docs/PROJECT_PHILOSOPHY_EN.md) — full philosophy
+5. [`docs/CONCEPTS_EN.md`](docs/CONCEPTS_EN.md) — 5 concepts traced from philosophy → architecture → example
+6. [`docs/REBIRTH_1_1_NEW_FOUNDATION_EN.md`](docs/REBIRTH_1_1_NEW_FOUNDATION_EN.md) — current line narrative
+7. [`docs/MARIA_DEVLOG_EN.md`](docs/MARIA_DEVLOG_EN.md) — author devlog
 
 ---
 

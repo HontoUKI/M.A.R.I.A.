@@ -97,8 +97,9 @@
 |---|---|---|
 | [`M.A.R.I.A.-Core`](https://github.com/HontoUKI/M.A.R.I.A.-Core) | Public sanitized snapshot of the Core runtime (Apache-2.0). | Frozen at `public-final` (1.1.3repair) — no longer updated. |
 | [`M.A.R.I.A.-WebUI`](https://github.com/HontoUKI/M.A.R.I.A.-WebUI) | Debug/developer cockpit. | Public; awaiting migration to the new FastAPI contract. |
+| [`M.A.R.I.A.-Voice`](https://github.com/HontoUKI/M.A.R.I.A.-Voice) | External local voice runtime: STT, TTS, VAD, playback and diagnostics. | Public; active bootstrap. Current local TTS baseline: Silero Baya 48 kHz + WAV polish. |
 
-Future ecosystem modules (planned as separate clients): Voice, CV,
+Future ecosystem modules (planned as separate clients): CV,
 **Presence-Shell** (Tauri-based desktop shell — avatar rendering
 through Live2D / sprite inside its web layer plus window / audio
 bridge; replaces the earlier separate Avatar + Unity plans),
@@ -115,6 +116,8 @@ M.A.R.I.A.-Core                — runtime, API, FastAPI, contracts, memory,
                                  state, perception, tests, setup,
                                  Core-specific Project_state and CHANGE_LOG.
 M.A.R.I.A.-WebUI               — debug cockpit (separate session).
+M.A.R.I.A.-Voice               — external voice runtime: STT, TTS, VAD,
+                                 playback, local diagnostics.
 ```
 
 ---

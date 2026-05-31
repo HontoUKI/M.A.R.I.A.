@@ -36,8 +36,9 @@ All interpretations reflect different aspects of the project and are considered 
 |---|---|
 | [`M.A.R.I.A.-Core`](https://github.com/HontoUKI/M.A.R.I.A.-Core) | Canonical single-user runtime and architectural heart of the ecosystem |
 | [`M.A.R.I.A.-WebUI`](https://github.com/HontoUKI/M.A.R.I.A.-WebUI) | Debug/developer cockpit for observing and testing runtime behavior |
+| [`M.A.R.I.A.-Voice`](https://github.com/HontoUKI/M.A.R.I.A.-Voice) | External local voice runtime: STT, TTS, VAD, playback and diagnostics |
 
-Future modules may include Voice, CV, **Presence-Shell** (Tauri-based desktop shell handling avatar rendering and window/audio bridge), Discord integration and other ecosystem clients.
+Future modules may include CV, **Presence-Shell** (Tauri-based desktop shell handling avatar rendering and window/audio bridge), Discord integration and other ecosystem clients.
 
 Repositories using the `M.A.R.I.A.` naming but not listed here are not considered official parts of the ecosystem.
 
@@ -88,7 +89,7 @@ The goal is to create a believable local character system capable of long-term i
 M.A.R.I.A.
 ├─ M.A.R.I.A.-Core
 ├─ M.A.R.I.A.-WebUI
-├─ M.A.R.I.A.-Voice              (future, TTS/STT/VAD/playback)
+├─ M.A.R.I.A.-Voice              (active, TTS/STT/VAD/playback)
 ├─ M.A.R.I.A.-CV                 (future, presence observer)
 ├─ M.A.R.I.A.-Presence-Shell     (future, Tauri desktop shell —
 │                                 avatar rendering + window/audio bridge;

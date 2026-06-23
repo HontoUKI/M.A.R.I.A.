@@ -131,6 +131,15 @@ This repository exists as:
 
 ---
 
+## Timeline
+
+- **2026-01-29** — first voice prototype: the project begins.
+- **2026-03-16** — expanded character prototype.
+- **April 2026** — AI coding agents join the workflow as accelerators *(the author still drives and reviews the architecture)*.
+- **2026 →** — the Rebirth lines: Core slimming, perception extracted into a separate world-runtime, the ML brain, the cognitive memory / dossier + reflection layer and controlled agency. Current line: calibration & cleanup.
+
+---
+
 ## Project status
 
 M.A.R.I.A. is **actively developed**, but development is currently **author-driven and closed-doors**.
@@ -158,6 +167,19 @@ Production code vs tests across the ecosystem — source languages only (docs, d
 | **Ecosystem total** | **43 591** | **25 426** | **58%** |
 
 _Lines of code (Python · JS / JSX · Rust · CSS). Test-to-prod = test LOC as a share of production LOC._
+
+### Why so much code?
+
+Almost all of it is **authored logic** — not vendored dependencies or framework boilerplate. The dependency base is deliberately lean:
+
+| Module | Core dependencies |
+|---|---|
+| `M.A.R.I.A.-Core` | FastAPI · Pydantic · NumPy · PyYAML · Requests *(LLM runs locally via Ollama, over HTTP)* |
+| `M.A.R.I.A.-Voice` | Pydantic *(TTS / STT engines loaded lazily as optional sidecars)* |
+| `Presence-Shell` | React · PixiJS + Live2D · Tauri 2 (Rust) · Vite |
+| Private modules | FastAPI · Pydantic · NumPy · scikit-learn *(the perception brain is hand-written)* |
+
+No LangChain, no heavy agent frameworks, no giant ML stack — the perception brain is a self-written NumPy / scikit-learn model, and the LLM runs locally through Ollama. The line count reflects **hand-written behavior, memory, perception and test code**, not libraries.
 
 ---
 

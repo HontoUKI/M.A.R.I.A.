@@ -13,6 +13,16 @@
 
 ---
 
+> **Where this stands right now.** At its current stage the Core architecture is an attempt to
+> simulate a personality with an **"inner core"** — not a product, not a SaaS. It is a
+> **single-user system that brings to life exactly one authored personality, born in dialogue**.
+> (You could, of course, craft your own "Maria" if you wanted — but authoring a personality is a
+> labor-intensive process.)
+>
+> 👉 **See her in motion:** [a sanitized glimpse of one clean run](public/showrun) — conversation, diary and reflection.
+
+---
+
 ## What is M.A.R.I.A.?
 
 **M.A.R.I.A.** is an author-driven ecosystem of local AI character projects built around `M.A.R.I.A.-Core`.

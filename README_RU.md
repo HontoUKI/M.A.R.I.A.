@@ -1,4 +1,3 @@
-````md
 # M.A.R.I.A.
 
 <div align="center">
@@ -14,6 +13,15 @@
 
 ---
 
+> **Где это сейчас.** В данный момент архитектура ядра — попытка симуляции личности с
+> **«внутренним стержнем»**. Это не продукт и не SaaS, а **single-user система, которая создаёт
+> именно одну прописанную личность, что рождается в диалоге**. (Конечно, при желании можно будет
+> сделать свою личную «Машу» — но создание личности процесс трудоёмкий.)
+>
+> 👉 **Посмотреть её вживую:** [санитизированный фрагмент одного чистого прогона](public/showrun) — диалог, дневник и рефлексия.
+
+---
+
 ## Что такое M.A.R.I.A.?
 
 **M.A.R.I.A.** — это авторская экосистема локальных AI character-проектов, построенная вокруг `M.A.R.I.A.-Core`.
@@ -25,7 +33,7 @@ M.A.R.I.A.
 ├─ Myself As Real Intelligence Artifact
 ├─ My Artificial “Real” Intelligence Appearance
 └─ Myself As Real Intelligence Appearance
-````
+```
 
 Все интерпретации отражают разные стороны проекта и считаются корректными.
 
@@ -167,6 +175,3 @@ _Строки кода (Python · JS / JSX · Rust · CSS). Тесты/прод 
 ![Maria Debug WebUI — live conversation](public/screens/maria-live-conversation.png)
 
 ![Maria Debug WebUI — empty state](public/screens/maria-empty-backend-off.png)
-
-```
-```

@@ -135,6 +135,22 @@ The goal remains the same: a believable, local, single-user character system wit
 
 ---
 
+## 📊 Code metrics
+
+Production code vs tests across the ecosystem — source languages only (docs, data, generated and vendored files excluded), measured with [tokei](https://github.com/XAMPPRocky/tokei):
+
+| Module | Production | Tests | Test-to-prod |
+|---|--:|--:|--:|
+| `M.A.R.I.A.-Core` | 26 533 | 21 337 | **80%** |
+| `M.A.R.I.A.-Voice` | 2 933 | 1 164 | 40% |
+| `Presence-Shell` | 2 141 | — | — |
+| Private modules *(world-runtime · ML brain · cognition)* | 11 984 | 2 925 | 24% |
+| **Ecosystem total** | **43 591** | **25 426** | **58%** |
+
+_Lines of code (Python · JS / JSX · Rust · CSS). Test-to-prod = test LOC as a share of production LOC._
+
+---
+
 ## Following development & future contribution
 
 - **To follow along:** watch / star this repository — direction updates and narrative land here.

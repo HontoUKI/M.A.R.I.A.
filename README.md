@@ -34,11 +34,13 @@ All interpretations reflect different aspects of the project and are considered 
 
 | Repository | Description |
 |---|---|
-| [`M.A.R.I.A.-Core`](https://github.com/HontoUKI/M.A.R.I.A.-Core) | Canonical single-user runtime and architectural heart of the ecosystem |
-| [`M.A.R.I.A.-WebUI`](https://github.com/HontoUKI/M.A.R.I.A.-WebUI) | Debug/developer cockpit for observing and testing runtime behavior |
+| [`M.A.R.I.A.-Core`](https://github.com/HontoUKI/M.A.R.I.A.-Core) | Canonical single-user runtime and architectural heart of the ecosystem. The public repository is an early **sanitized snapshot**; active development is author-driven and private (see *Project status* below). |
 | [`M.A.R.I.A.-Voice`](https://github.com/HontoUKI/M.A.R.I.A.-Voice) | External local voice runtime: STT, TTS, VAD, playback and diagnostics |
+| [`M.A.R.I.A.-WebUI`](https://github.com/HontoUKI/M.A.R.I.A.-WebUI) | *(retired)* Early debug/developer cockpit. Frozen and compatible only with the pre-refactoring Core; kept for historical reference. |
 
-Future modules may include CV, **Presence-Shell** (Tauri-based desktop shell handling avatar rendering and window/audio bridge), Discord integration and other ecosystem clients.
+The architecture has since grown beyond these public repositories — a dedicated local **world-runtime** (perception & interaction), an **ML-driven perception brain**, a **cognitive memory / dossier** layer and a **controlled-agency** layer. Those modules are developed privately for now; this hub tracks their direction conceptually (see *Project status*).
+
+A **Presence-Shell** desktop client (Tauri — avatar rendering + window/audio bridge, replacing earlier Unity/Live2D plans) is built; CV (presence observer) and other clients remain future ideas.
 
 Repositories using the `M.A.R.I.A.` naming but not listed here are not considered official parts of the ecosystem.
 
@@ -58,7 +60,7 @@ Recommended reading paths:
 3. [`docs/FAQ_EN.md`](docs/FAQ_EN.md) — frequently asked questions
 4. [`docs/PROJECT_PHILOSOPHY_EN.md`](docs/PROJECT_PHILOSOPHY_EN.md) — full philosophy
 5. [`docs/CONCEPTS_EN.md`](docs/CONCEPTS_EN.md) — 5 concepts traced from philosophy → architecture → example
-6. [`docs/REBIRTH_1_1_NEW_FOUNDATION_EN.md`](docs/REBIRTH_1_1_NEW_FOUNDATION_EN.md) — current line narrative
+6. [`docs/REBIRTH_1_1_NEW_FOUNDATION_EN.md`](docs/REBIRTH_1_1_NEW_FOUNDATION_EN.md) — the Rebirth 1.1 foundation narrative (the project has since advanced through many further Rebirth lines — see *Project status*)
 7. [`docs/MARIA_DEVLOG_EN.md`](docs/MARIA_DEVLOG_EN.md) — author devlog
 
 ---
@@ -87,13 +89,16 @@ The goal is to create a believable local character system capable of long-term i
 
 ```text
 M.A.R.I.A.
-├─ M.A.R.I.A.-Core
-├─ M.A.R.I.A.-WebUI
+├─ M.A.R.I.A.-Core               (canonical runtime; public repo = early snapshot)
 ├─ M.A.R.I.A.-Voice              (active, TTS/STT/VAD/playback)
-├─ M.A.R.I.A.-CV                 (future, presence observer)
-├─ M.A.R.I.A.-Presence-Shell     (future, Tauri desktop shell —
+├─ M.A.R.I.A.-Presence-Shell     (built, Tauri desktop shell —
 │                                 avatar rendering + window/audio bridge;
 │                                 replaces earlier Unity/Live2D plans)
+├─ world-runtime                 (private — perception & interaction layer)
+├─ ML perception brain           (private — trains the runtime's brain)
+├─ cognitive memory / dossier    (private — meaning & becoming layer)
+├─ M.A.R.I.A.-WebUI              (retired — early debug cockpit, frozen)
+├─ M.A.R.I.A.-CV                 (future, presence observer)
 └─ Other ecosystem modules
 ```
 
@@ -114,9 +119,33 @@ This repository exists as:
 - historical archive of project evolution;
 - public entry point into the M.A.R.I.A. ecosystem.
 
+---
+
+## Project status
+
+M.A.R.I.A. is **actively developed**, but development is currently **author-driven and closed-doors**.
+
+What that means in practice:
+
+- The public `M.A.R.I.A.-Core` repository is an early **sanitized snapshot** (frozen at the Rebirth 1.1.x foundation). It does **not** reflect current internals.
+- Since that snapshot the runtime has gone through many further **Rebirth lines**: the perception layer was extracted into a dedicated local **world-runtime**; perception is now driven by a self-written **ML brain**; a **cognitive memory / dossier + reflection** layer gives the character meaning and continuity; and a permission-gated **controlled-agency** layer gives her safe "hands". These modules are private for now.
+- This hub is the **public window** into that direction — high-level, conceptual, no internal source.
+
+The goal remains the same: a believable, local, single-user character system with long-term memory, subjective perception and emotional continuity — not a generic assistant.
+
+---
+
+## Following development & future contribution
+
+- **To follow along:** watch / star this repository — direction updates and narrative land here.
+- **Contribution is not open yet.** The project is intentionally single-author and closed-doors while the architecture stabilizes.
+- **For the future:** collaboration may open later. If the philosophy resonates and you'd want to be involved down the line, the welcome path is to follow the project, read the philosophy/concepts docs, and reach out via the repository (issues/discussions) — no code contributions are expected or accepted at this stage.
+
+---
+
 ## Screenshots
 
-> Debug WebUI — developer/debug cockpit
+> Debug WebUI — early developer/debug cockpit (now **retired**; shown for historical reference)
 
 ![Maria Debug WebUI — live conversation](public/screens/maria-live-conversation.png)
 

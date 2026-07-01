@@ -136,7 +136,7 @@ This repository exists as:
 - **2026-01-29** — first voice prototype: the project begins.
 - **2026-03-16** — expanded character prototype.
 - **April 2026** — AI coding agents join the workflow as accelerators *(the author still drives and reviews the architecture)*.
-- **2026 →** — the Rebirth lines: Core slimming, perception extracted into a separate world-runtime, the ML brain, the cognitive memory / dossier + reflection layer and controlled agency. Current line: calibration & cleanup.
+- **2026 →** — the Rebirth lines: Core slimming, perception extracted into a separate world-runtime, the ML brain, the cognitive memory / dossier + reflection layer and controlled agency. Recent lines have pushed the "perception lives in the ML brain, not hand-written rules" principle further — the character's read of a message (its emotion, warmth, and now the *conversational intent* itself) is a learned signal from her own brain rather than keyword logic in the runtime.
 
 ---
 

@@ -160,13 +160,15 @@ Production code vs tests across the ecosystem — source languages only (docs, d
 
 | Module | Production | Tests | Test-to-prod |
 |---|--:|--:|--:|
-| `M.A.R.I.A.-Core` | 26 533 | 21 337 | **80%** |
+| `M.A.R.I.A.-Core` | 24 673 | 19 934 | **81%** |
 | `M.A.R.I.A.-Voice` | 2 933 | 1 164 | 40% |
 | `Presence-Shell` | 2 141 | — | — |
-| Private modules *(world-runtime · ML brain · cognition)* | 11 984 | 2 925 | 24% |
-| **Ecosystem total** | **43 591** | **25 426** | **58%** |
+| Private modules *(world-runtime · ML brain · cognition)* | 12 702 | 3 076 | 24% |
+| **Ecosystem total** | **42 449** | **24 174** | **57%** |
 
 _Lines of code (Python · JS / JSX · Rust · CSS). Test-to-prod = test LOC as a share of production LOC._
+
+Over the last refactoring line the **runtime core shrank** (≈ −1 900 lines of production code) while the **private perception / brain modules grew** (≈ +700) — logic keeps moving *out* of the decision core into the separate world-runtime and the ML brain, which is the whole direction of travel.
 
 ### Why so much code?
 

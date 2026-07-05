@@ -45,6 +45,7 @@ All interpretations reflect different aspects of the project and are considered 
 | Repository | Description |
 |---|---|
 | [`M.A.R.I.A.-Core`](https://github.com/HontoUKI/M.A.R.I.A.-Core) | Canonical single-user runtime and architectural heart of the ecosystem. The public repository is an early **sanitized snapshot**; active development is author-driven and private (see *Project status* below). |
+| [`M.A.R.I.A.-Micro-Engine`](https://github.com/HontoUKI/M.A.R.I.A.-Micro-Engine) | Public **community-tier** chat engine spun off from the ecosystem: character-pack driven, with an OpenAI-compatible API and relationship **stages** that let a character change *visibly and explainably* as the bond grows. Apache-2.0 — the accessible, runnable entry point to the project. |
 | [`M.A.R.I.A.-Voice`](https://github.com/HontoUKI/M.A.R.I.A.-Voice) | External local voice runtime: STT, TTS, VAD, playback and diagnostics |
 | [`M.A.R.I.A.-WebUI`](https://github.com/HontoUKI/M.A.R.I.A.-WebUI) | *(retired)* Early debug/developer cockpit. Frozen and compatible only with the pre-refactoring Core; kept for historical reference. |
 

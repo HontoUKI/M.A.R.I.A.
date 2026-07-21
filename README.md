@@ -44,12 +44,10 @@ All interpretations reflect different aspects of the project and are considered 
 
 | Repository | Description |
 |---|---|
-| [`M.A.R.I.A.-Core`](https://github.com/HontoUKI/M.A.R.I.A.-Core) | Canonical single-user runtime and architectural heart of the ecosystem. The public repository is an early **sanitized snapshot**; active development is author-driven and private (see *Project status* below). |
-| [`M.A.R.I.A.-Micro-Engine`](https://github.com/HontoUKI/M.A.R.I.A.-Micro-Engine) | Public **community-tier** chat engine spun off from the ecosystem: character-pack driven, with an OpenAI-compatible API and relationship **stages** that let a character change *visibly and explainably* as the bond grows. Apache-2.0 — the accessible, runnable entry point to the project. |
+| [`M.A.R.I.A.-Micro-Engine`](https://github.com/HontoUKI/M.A.R.I.A.-Micro-Engine) | Public **community-tier** chat engine spun off from the ecosystem: character-pack driven, with an OpenAI-compatible API and relationship **stages** that let a character change *visibly and explainably* as the bond grows. Apache-2.0 — the accessible, **runnable** entry point to the project. |
 | [`M.A.R.I.A.-Voice`](https://github.com/HontoUKI/M.A.R.I.A.-Voice) | External local voice runtime: STT, TTS, VAD, playback and diagnostics |
-| [`M.A.R.I.A.-WebUI`](https://github.com/HontoUKI/M.A.R.I.A.-WebUI) | *(retired)* Early debug/developer cockpit. Frozen and compatible only with the pre-refactoring Core; kept for historical reference. |
 
-The architecture has since grown beyond these public repositories — a dedicated local **world-runtime** (perception & interaction), an **ML-driven perception brain**, a **cognitive memory / dossier** layer and a **controlled-agency** layer. Those modules are developed privately for now; this hub tracks their direction conceptually (see *Project status*).
+The full ecosystem is developed privately for now — the canonical **Core runtime**, a dedicated local **world-runtime** (perception & interaction), an **ML-driven perception brain**, a **cognitive memory / dossier** layer and a **controlled-agency** layer. This hub tracks their direction conceptually (see *Project status*); the **Micro-Engine** is the public, runnable slice you can actually try.
 
 A **Presence-Shell** desktop client (Tauri — avatar rendering + window/audio bridge, replacing earlier Unity/Live2D plans) is built; CV (presence observer) and other clients remain future ideas.
 
@@ -100,7 +98,8 @@ The goal is to create a believable local character system capable of long-term i
 
 ```text
 M.A.R.I.A.
-├─ M.A.R.I.A.-Core               (canonical runtime; public repo = early snapshot)
+├─ M.A.R.I.A.-Core               (private — canonical runtime)
+├─ M.A.R.I.A.-Micro-Engine       (public — runnable community-tier engine)
 ├─ M.A.R.I.A.-Voice              (active, TTS/STT/VAD/playback)
 ├─ M.A.R.I.A.-Presence-Shell     (built, Tauri desktop shell —
 │                                 avatar rendering + window/audio bridge;
@@ -108,7 +107,6 @@ M.A.R.I.A.
 ├─ world-runtime                 (private — perception & interaction layer)
 ├─ ML perception brain           (private — trains the runtime's brain)
 ├─ cognitive memory / dossier    (private — meaning & becoming layer)
-├─ M.A.R.I.A.-WebUI              (retired — early debug cockpit, frozen)
 ├─ M.A.R.I.A.-CV                 (future, presence observer)
 └─ Other ecosystem modules
 ```
@@ -147,7 +145,7 @@ M.A.R.I.A. is **actively developed**, but development is currently **author-driv
 
 What that means in practice:
 
-- The public `M.A.R.I.A.-Core` repository is an early **sanitized snapshot** (frozen at the Rebirth 1.1.x foundation). It does **not** reflect current internals.
+- There is **no public snapshot** of the current runtime — the accessible, runnable public slice is the **Micro-Engine**. The canonical Core and the newer layers are private.
 - Since that snapshot the runtime has gone through many further **Rebirth lines**: the perception layer was extracted into a dedicated local **world-runtime**; perception is now driven by a self-written **ML brain**; a **cognitive memory / dossier + reflection** layer gives the character meaning and continuity; and a permission-gated **controlled-agency** layer gives her safe "hands". These modules are private for now.
 - This hub is the **public window** into that direction — high-level, conceptual, no internal source.
 
@@ -196,8 +194,8 @@ No LangChain, no heavy agent frameworks, no giant ML stack — the perception br
 
 ## Screenshots
 
-> Debug WebUI — early developer/debug cockpit (now **retired**; shown for historical reference)
+> M.A.R.I.A. in an early debug view — a live conversation and the idle state.
 
-![Maria Debug WebUI — live conversation](public/screens/maria-live-conversation.png)
+![M.A.R.I.A. — live conversation](public/screens/maria-live-conversation.png)
 
-![Maria Debug WebUI — empty state](public/screens/maria-empty-backend-off.png)
+![M.A.R.I.A. — empty state](public/screens/maria-empty-backend-off.png)
